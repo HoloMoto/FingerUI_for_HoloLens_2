@@ -1,1 +1,6 @@
 # FingerUI_for_HoloLens_2
+
+Osaka HoloLens Hackathon Online 2021で開発しているHoloLens 2でかて手で操作可能なFingerタイプのUIのリポジトリ
+
+将来的にHoloLensのアクセシビリティの面から様々な型が利用形なUIが必要とされています。
+
