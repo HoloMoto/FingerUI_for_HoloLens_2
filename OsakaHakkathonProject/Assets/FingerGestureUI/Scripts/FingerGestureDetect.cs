@@ -70,17 +70,17 @@ public class FingerGestureDetect : MonoBehaviour
                 if (indexFirstfinger)
                 {
                     indexFirstfinger = false;
-                    indexFirstlostfinger = true;
+                    //indexFirstlostfinger = true;
                     OnIndexFingerFirst.Invoke();
                 }
             }
             else
             {
                 OnIndexFingerLost.Invoke();
-                if (indexFirstlostfinger)
+                if (!indexFirstfinger)
                 {
                     indexFirstfinger = true;
-                    indexFirstlostfinger = false;
+                    //indexFirstlostfinger = false;
                     OnIndexLostFirst.Invoke();
                 }
             }
@@ -92,17 +92,17 @@ public class FingerGestureDetect : MonoBehaviour
                 if (middleFirstfinger)
                 {
                     middleFirstfinger = false;
-                    middleFirstLostfinger = true;
+                    //middleFirstLostfinger = true;
                     OnMiddleFingerFirst.Invoke();
                 }
             }
             else
             {
                 OnMiddleFingerLost.Invoke();
-                if (middleFirstLostfinger)
+                if (!middleFirstfinger)
                 {
                     middleFirstfinger = true;
-                    middleFirstLostfinger = false;
+                   // middleFirstLostfinger = false;
                     OnMiddleLostFirst.Invoke();
                 }
             }
@@ -113,17 +113,17 @@ public class FingerGestureDetect : MonoBehaviour
                 if (ringandPinkyFirstfinger)
                 {
                     ringandPinkyFirstfinger = false;
-                    ringandPinkyFirstLostfinger = true;
+                    //ringandPinkyFirstLostfinger = true;
                     OnRingAndPinkyFingerFirst.Invoke();
                 }
             }
             else
             {
                 OnRingAndPinkyLost.Invoke();
-                if (ringandPinkyFirstLostfinger)
+                if (!ringandPinkyFirstfinger)
                 {
                     ringandPinkyFirstfinger = true;
-                    ringandPinkyFirstLostfinger = false;
+                    //ringandPinkyFirstLostfinger = false;
                     OnRingAndPinkyLostFirst.Invoke();
                 }
             }
@@ -131,11 +131,11 @@ public class FingerGestureDetect : MonoBehaviour
         else
         {
             OnIndexFingerLost.Invoke();
-            indexFirstfinger = true;
+            //indexFirstfinger = true;
             OnMiddleFingerLost.Invoke();
-            middleFirstfinger = true;
+            //middleFirstfinger = true;
             OnRingAndPinkyLost.Invoke();
-            ringandPinkyFirstfinger = true;
+            //ringandPinkyFirstfinger = true;
         }
     }
 

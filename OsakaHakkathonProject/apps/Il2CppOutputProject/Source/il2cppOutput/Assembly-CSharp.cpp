@@ -3035,7 +3035,7 @@ IL_0028:
 		bool L_7 = Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_inline((Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *)L_6, /*hidden argument*/Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_RuntimeMethod_var);
 		if (!L_7)
 		{
-			goto IL_019b;
+			goto IL_0171;
 		}
 	}
 	{
@@ -3047,7 +3047,7 @@ IL_0028:
 		bool L_11 = Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_inline((Nullable_1_t9E6A67BECE376F0623B5C857F5674A0311C41793 *)(&V_1), /*hidden argument*/Nullable_1_get_HasValue_m275A31438FCDAEEE039E95D887684E04FD6ECE2B_RuntimeMethod_var);
 		if (!((int32_t)((int32_t)((((int32_t)L_9) == ((int32_t)L_10))? 1 : 0)&(int32_t)L_11)))
 		{
-			goto IL_019b;
+			goto IL_0171;
 		}
 	}
 	{
@@ -3055,14 +3055,14 @@ IL_0028:
 		bool L_12 = FingerGestureDetect_indexfingerDetected_m366BA9DF9C7087D25E7240E4A86B8DF7E870B56E(__this, /*hidden argument*/NULL);
 		if (!L_12)
 		{
-			goto IL_009b;
+			goto IL_0094;
 		}
 	}
 	{
 		bool L_13 = FingerGestureDetect_HanddirDetected_mC0FC705033CC6994439E4785B17682D6424287B5(__this, /*hidden argument*/NULL);
 		if (!L_13)
 		{
-			goto IL_009b;
+			goto IL_0094;
 		}
 	}
 	{
@@ -3074,60 +3074,56 @@ IL_0028:
 		bool L_15 = __this->get_indexFirstfinger_25();
 		if (!L_15)
 		{
-			goto IL_00c7;
+			goto IL_00b9;
 		}
 	}
 	{
 		// indexFirstfinger = false;
 		__this->set_indexFirstfinger_25((bool)0);
-		// indexFirstlostfinger = true;
-		__this->set_indexFirstlostfinger_28((bool)1);
 		// OnIndexFingerFirst.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_16 = __this->get_OnIndexFingerFirst_18();
 		NullCheck(L_16);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_16, /*hidden argument*/NULL);
 		// }
-		goto IL_00c7;
+		goto IL_00b9;
 	}
 
-IL_009b:
+IL_0094:
 	{
 		// OnIndexFingerLost.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_17 = __this->get_OnIndexFingerLost_11();
 		NullCheck(L_17);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_17, /*hidden argument*/NULL);
-		// if (indexFirstlostfinger)
-		bool L_18 = __this->get_indexFirstlostfinger_28();
-		if (!L_18)
+		// if (!indexFirstfinger)
+		bool L_18 = __this->get_indexFirstfinger_25();
+		if (L_18)
 		{
-			goto IL_00c7;
+			goto IL_00b9;
 		}
 	}
 	{
 		// indexFirstfinger = true;
 		__this->set_indexFirstfinger_25((bool)1);
-		// indexFirstlostfinger = false;
-		__this->set_indexFirstlostfinger_28((bool)0);
 		// OnIndexLostFirst.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_19 = __this->get_OnIndexLostFirst_21();
 		NullCheck(L_19);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_19, /*hidden argument*/NULL);
 	}
 
-IL_00c7:
+IL_00b9:
 	{
 		// if (middlefingerDetected()&& HanddirDetected())
 		bool L_20 = FingerGestureDetect_middlefingerDetected_m3EDF6B78F3C4F41E8468846F867E9D7C1D18B8B2(__this, /*hidden argument*/NULL);
 		if (!L_20)
 		{
-			goto IL_0105;
+			goto IL_00f0;
 		}
 	}
 	{
 		bool L_21 = FingerGestureDetect_HanddirDetected_mC0FC705033CC6994439E4785B17682D6424287B5(__this, /*hidden argument*/NULL);
 		if (!L_21)
 		{
-			goto IL_0105;
+			goto IL_00f0;
 		}
 	}
 	{
@@ -3139,60 +3135,56 @@ IL_00c7:
 		bool L_23 = __this->get_middleFirstfinger_26();
 		if (!L_23)
 		{
-			goto IL_0131;
+			goto IL_0115;
 		}
 	}
 	{
 		// middleFirstfinger = false;
 		__this->set_middleFirstfinger_26((bool)0);
-		// middleFirstLostfinger = true;
-		__this->set_middleFirstLostfinger_29((bool)1);
 		// OnMiddleFingerFirst.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_24 = __this->get_OnMiddleFingerFirst_19();
 		NullCheck(L_24);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_24, /*hidden argument*/NULL);
 		// }
-		goto IL_0131;
+		goto IL_0115;
 	}
 
-IL_0105:
+IL_00f0:
 	{
 		// OnMiddleFingerLost.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_25 = __this->get_OnMiddleFingerLost_13();
 		NullCheck(L_25);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_25, /*hidden argument*/NULL);
-		// if (middleFirstLostfinger)
-		bool L_26 = __this->get_middleFirstLostfinger_29();
-		if (!L_26)
+		// if (!middleFirstfinger)
+		bool L_26 = __this->get_middleFirstfinger_26();
+		if (L_26)
 		{
-			goto IL_0131;
+			goto IL_0115;
 		}
 	}
 	{
 		// middleFirstfinger = true;
 		__this->set_middleFirstfinger_26((bool)1);
-		// middleFirstLostfinger = false;
-		__this->set_middleFirstLostfinger_29((bool)0);
 		// OnMiddleLostFirst.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_27 = __this->get_OnMiddleLostFirst_22();
 		NullCheck(L_27);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_27, /*hidden argument*/NULL);
 	}
 
-IL_0131:
+IL_0115:
 	{
 		// if (RingAndPinkyFingerDetected()&& HanddirDetected())
 		bool L_28 = FingerGestureDetect_RingAndPinkyFingerDetected_m5D6E0AD6CA4A3A92ADD6F610E2858B8ED3ED0178(__this, /*hidden argument*/NULL);
 		if (!L_28)
 		{
-			goto IL_016e;
+			goto IL_014b;
 		}
 	}
 	{
 		bool L_29 = FingerGestureDetect_HanddirDetected_mC0FC705033CC6994439E4785B17682D6424287B5(__this, /*hidden argument*/NULL);
 		if (!L_29)
 		{
-			goto IL_016e;
+			goto IL_014b;
 		}
 	}
 	{
@@ -3204,14 +3196,12 @@ IL_0131:
 		bool L_31 = __this->get_ringandPinkyFirstfinger_27();
 		if (!L_31)
 		{
-			goto IL_01d1;
+			goto IL_0192;
 		}
 	}
 	{
 		// ringandPinkyFirstfinger = false;
 		__this->set_ringandPinkyFirstfinger_27((bool)0);
-		// ringandPinkyFirstLostfinger = true;
-		__this->set_ringandPinkyFirstLostfinger_30((bool)1);
 		// OnRingAndPinkyFingerFirst.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_32 = __this->get_OnRingAndPinkyFingerFirst_20();
 		NullCheck(L_32);
@@ -3220,24 +3210,22 @@ IL_0131:
 		return;
 	}
 
-IL_016e:
+IL_014b:
 	{
 		// OnRingAndPinkyLost.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_33 = __this->get_OnRingAndPinkyLost_15();
 		NullCheck(L_33);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_33, /*hidden argument*/NULL);
-		// if (ringandPinkyFirstLostfinger)
-		bool L_34 = __this->get_ringandPinkyFirstLostfinger_30();
-		if (!L_34)
+		// if (!ringandPinkyFirstfinger)
+		bool L_34 = __this->get_ringandPinkyFirstfinger_27();
+		if (L_34)
 		{
-			goto IL_01d1;
+			goto IL_0192;
 		}
 	}
 	{
 		// ringandPinkyFirstfinger = true;
 		__this->set_ringandPinkyFirstfinger_27((bool)1);
-		// ringandPinkyFirstLostfinger = false;
-		__this->set_ringandPinkyFirstLostfinger_30((bool)0);
 		// OnRingAndPinkyLostFirst.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_35 = __this->get_OnRingAndPinkyLostFirst_23();
 		NullCheck(L_35);
@@ -3246,29 +3234,23 @@ IL_016e:
 		return;
 	}
 
-IL_019b:
+IL_0171:
 	{
 		// OnIndexFingerLost.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_36 = __this->get_OnIndexFingerLost_11();
 		NullCheck(L_36);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_36, /*hidden argument*/NULL);
-		// indexFirstfinger = true;
-		__this->set_indexFirstfinger_25((bool)1);
 		// OnMiddleFingerLost.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_37 = __this->get_OnMiddleFingerLost_13();
 		NullCheck(L_37);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_37, /*hidden argument*/NULL);
-		// middleFirstfinger = true;
-		__this->set_middleFirstfinger_26((bool)1);
 		// OnRingAndPinkyLost.Invoke();
 		UnityEvent_t5C6DDC2FCDF7F5C1808F1DDFBAD27A383F5FE65F * L_38 = __this->get_OnRingAndPinkyLost_15();
 		NullCheck(L_38);
 		UnityEvent_Invoke_mB2FA1C76256FE34D5E7F84ABE528AC61CE8A0325(L_38, /*hidden argument*/NULL);
-		// ringandPinkyFirstfinger = true;
-		__this->set_ringandPinkyFirstfinger_27((bool)1);
 	}
 
-IL_01d1:
+IL_0192:
 	{
 		// }
 		return;
