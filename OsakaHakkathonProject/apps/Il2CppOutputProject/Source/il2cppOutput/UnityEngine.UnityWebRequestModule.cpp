@@ -7415,31 +7415,31 @@ IL_0087:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_17 = V_2;
 			NullCheck(L_17);
 			NullCheck(L_15);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_15, L_16, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_15, L_16, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_17)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_18 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_19 = V_1;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_20 = V_1;
 			NullCheck(L_20);
 			NullCheck(L_18);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_18, L_19, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_20)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_18, L_19, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_20)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_21 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_22 = __this->get_boundary_4();
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_23 = __this->get_boundary_4();
 			NullCheck(L_23);
 			NullCheck(L_21);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_21, L_22, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_23)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_21, L_22, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_23)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_24 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_25 = V_2;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_26 = V_2;
 			NullCheck(L_26);
 			NullCheck(L_24);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_24, L_25, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_26)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_24, L_25, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_26)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_27 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_28 = V_3;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_29 = V_3;
 			NullCheck(L_29);
 			NullCheck(L_27);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_27, L_28, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_29)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_27, L_28, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_29)->max_length)))));
 			Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 * L_30 = Encoding_get_UTF8_m67C8652936B681E7BC7505E459E88790E0FF16D9(/*hidden argument*/NULL);
 			List_1_tE8032E48C661C350FF9550E9063D595C0AB25CD3 * L_31 = __this->get_types_3();
 			int32_t L_32 = V_8;
@@ -7453,19 +7453,19 @@ IL_0087:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_37 = V_9;
 			NullCheck(L_37);
 			NullCheck(L_35);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_35, L_36, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_37)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_35, L_36, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_37)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_38 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_39 = V_2;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_40 = V_2;
 			NullCheck(L_40);
 			NullCheck(L_38);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_38, L_39, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_40)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_38, L_39, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_40)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_41 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_42 = V_4;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_43 = V_4;
 			NullCheck(L_43);
 			NullCheck(L_41);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_41, L_42, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_43)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_41, L_42, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_43)->max_length)))));
 			Encoding_t7837A3C0F55EAE0E3959A53C6D6E88B113ED78A4 * L_44 = Encoding_get_UTF8_m67C8652936B681E7BC7505E459E88790E0FF16D9(/*hidden argument*/NULL);
 			NullCheck(L_44);
 			String_t* L_45 = VirtFuncInvoker0< String_t* >::Invoke(9 /* System.String System.Text.Encoding::get_HeaderName() */, L_44);
@@ -7553,13 +7553,13 @@ IL_0193:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_71 = V_12;
 			NullCheck(L_71);
 			NullCheck(L_69);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_69, L_70, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_71)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_69, L_70, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_71)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_72 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_73 = V_5;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_74 = V_5;
 			NullCheck(L_74);
 			NullCheck(L_72);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_72, L_73, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_74)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_72, L_73, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_74)->max_length)))));
 			List_1_tE8032E48C661C350FF9550E9063D595C0AB25CD3 * L_75 = __this->get_fileNames_2();
 			int32_t L_76 = V_8;
 			NullCheck(L_75);
@@ -7657,19 +7657,19 @@ IL_0249:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_104 = V_6;
 			NullCheck(L_104);
 			NullCheck(L_102);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_102, L_103, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_104)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_102, L_103, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_104)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_105 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_106 = V_17;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_107 = V_17;
 			NullCheck(L_107);
 			NullCheck(L_105);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_105, L_106, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_107)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_105, L_106, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_107)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_108 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_109 = V_5;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_110 = V_5;
 			NullCheck(L_110);
 			NullCheck(L_108);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_108, L_109, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_110)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_108, L_109, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_110)->max_length)))));
 		}
 
 IL_0285:
@@ -7679,13 +7679,13 @@ IL_0285:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_113 = V_2;
 			NullCheck(L_113);
 			NullCheck(L_111);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_111, L_112, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_113)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_111, L_112, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_113)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_114 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_115 = V_2;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_116 = V_2;
 			NullCheck(L_116);
 			NullCheck(L_114);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_114, L_115, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_116)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_114, L_115, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_116)->max_length)))));
 			List_1_t4AB280456F4DE770AC993DE9A7C8C563A6311531 * L_117 = __this->get_formData_0();
 			int32_t L_118 = V_8;
 			NullCheck(L_117);
@@ -7696,7 +7696,7 @@ IL_0285:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_122 = V_13;
 			NullCheck(L_122);
 			NullCheck(L_120);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_120, L_121, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_122)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_120, L_121, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_122)->max_length)))));
 			int32_t L_123 = V_8;
 			V_8 = ((int32_t)il2cpp_codegen_add((int32_t)L_123, (int32_t)1));
 		}
@@ -7722,34 +7722,34 @@ IL_02dc:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_130 = V_2;
 			NullCheck(L_130);
 			NullCheck(L_128);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_128, L_129, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_130)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_128, L_129, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_130)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_131 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_132 = V_1;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_133 = V_1;
 			NullCheck(L_133);
 			NullCheck(L_131);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_131, L_132, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_133)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_131, L_132, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_133)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_134 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_135 = __this->get_boundary_4();
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_136 = __this->get_boundary_4();
 			NullCheck(L_136);
 			NullCheck(L_134);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_134, L_135, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_136)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_134, L_135, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_136)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_137 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_138 = V_1;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_139 = V_1;
 			NullCheck(L_139);
 			NullCheck(L_137);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_137, L_138, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_139)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_137, L_138, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_139)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_140 = V_7;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_141 = V_2;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_142 = V_2;
 			NullCheck(L_142);
 			NullCheck(L_140);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_140, L_141, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_142)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_140, L_141, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_142)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_143 = V_7;
 			NullCheck(L_143);
-			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_144 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(30 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_143);
+			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_144 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(31 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_143);
 			V_20 = L_144;
 			IL2CPP_LEAVE(0x42F, FINALLY_0335);
 		}
@@ -7847,7 +7847,7 @@ IL_03bc:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_167 = V_21;
 			NullCheck(L_167);
 			NullCheck(L_165);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_165, L_166, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_167)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_165, L_166, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_167)->max_length)))));
 		}
 
 IL_03cb:
@@ -7857,19 +7857,19 @@ IL_03cb:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_170 = V_25;
 			NullCheck(L_170);
 			NullCheck(L_168);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_168, L_169, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_170)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_168, L_169, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_170)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_171 = V_23;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_172 = V_22;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_173 = V_22;
 			NullCheck(L_173);
 			NullCheck(L_171);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_171, L_172, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_173)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_171, L_172, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_173)->max_length)))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_174 = V_23;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_175 = V_27;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_176 = V_27;
 			NullCheck(L_176);
 			NullCheck(L_174);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_174, L_175, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_176)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_174, L_175, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_176)->max_length)))));
 			int32_t L_177 = V_24;
 			V_24 = ((int32_t)il2cpp_codegen_add((int32_t)L_177, (int32_t)1));
 		}
@@ -7892,7 +7892,7 @@ IL_0417:
 		{
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_182 = V_23;
 			NullCheck(L_182);
-			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_183 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(30 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_182);
+			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_183 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(31 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_182);
 			V_20 = L_183;
 			IL2CPP_LEAVE(0x42F, FINALLY_0422);
 		}
@@ -8362,7 +8362,7 @@ IL_001d:
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_9 = ___space2;
 			NullCheck(L_9);
 			NullCheck(L_7);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length)))));
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, L_7, L_8, 0, (((int32_t)((int32_t)(((RuntimeArray*)L_9)->max_length)))));
 			goto IL_0084;
 		}
 
@@ -8426,7 +8426,7 @@ IL_004b:
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_25 = V_0;
 			uint8_t L_26 = ___escapeChar1;
 			NullCheck(L_25);
-			VirtActionInvoker1< uint8_t >::Invoke(26 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_25, L_26);
+			VirtActionInvoker1< uint8_t >::Invoke(27 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_25, L_26);
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_27 = V_0;
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_28 = ___input0;
 			int32_t L_29 = V_1;
@@ -8468,7 +8468,7 @@ IL_0068:
 			IL2CPP_RUNTIME_CLASS_INIT(WWWTranscoder_t0B24F1F17629756E6464A925870CC39236F39C61_il2cpp_TypeInfo_var);
 			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_35 = WWWTranscoder_Byte2Hex_mA129675BFEDFED879713DAB1592772BC52FA04FB((uint8_t)G_B12_1, G_B12_0, /*hidden argument*/NULL);
 			NullCheck(G_B12_2);
-			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(25 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, G_B12_2, L_35, 0, 2);
+			VirtActionInvoker3< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821*, int32_t, int32_t >::Invoke(26 /* System.Void System.IO.Stream::Write(System.Byte[],System.Int32,System.Int32) */, G_B12_2, L_35, 0, 2);
 			goto IL_0084;
 		}
 
@@ -8481,7 +8481,7 @@ IL_0078:
 			int32_t L_39 = L_38;
 			uint8_t L_40 = (L_37)->GetAt(static_cast<il2cpp_array_size_t>(L_39));
 			NullCheck(L_36);
-			VirtActionInvoker1< uint8_t >::Invoke(26 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_36, L_40);
+			VirtActionInvoker1< uint8_t >::Invoke(27 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_36, L_40);
 		}
 
 IL_0084:
@@ -8507,7 +8507,7 @@ IL_0098:
 		{
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_45 = V_0;
 			NullCheck(L_45);
-			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_46 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(30 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_45);
+			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_46 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(31 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_45);
 			V_5 = L_46;
 			IL2CPP_LEAVE(0xAD, FINALLY_00a2);
 		}
@@ -8790,7 +8790,7 @@ IL_001c:
 			V_1 = ((int32_t)il2cpp_codegen_add((int32_t)L_7, (int32_t)((int32_t)il2cpp_codegen_subtract((int32_t)(((int32_t)((int32_t)(((RuntimeArray*)L_8)->max_length)))), (int32_t)1))));
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_9 = V_0;
 			NullCheck(L_9);
-			VirtActionInvoker1< uint8_t >::Invoke(26 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_9, (uint8_t)((int32_t)32));
+			VirtActionInvoker1< uint8_t >::Invoke(27 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_9, (uint8_t)((int32_t)32));
 			goto IL_006c;
 		}
 
@@ -8844,7 +8844,7 @@ IL_0046:
 			IL2CPP_RUNTIME_CLASS_INIT(WWWTranscoder_t0B24F1F17629756E6464A925870CC39236F39C61_il2cpp_TypeInfo_var);
 			uint8_t L_23 = WWWTranscoder_Hex2Byte_mD417CA540CFBE045FCE32959CD3443EB9C8C7423(L_20, L_22, /*hidden argument*/NULL);
 			NullCheck(L_19);
-			VirtActionInvoker1< uint8_t >::Invoke(26 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_19, L_23);
+			VirtActionInvoker1< uint8_t >::Invoke(27 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_19, L_23);
 			goto IL_006c;
 		}
 
@@ -8857,7 +8857,7 @@ IL_0060:
 			int32_t L_27 = L_26;
 			uint8_t L_28 = (L_25)->GetAt(static_cast<il2cpp_array_size_t>(L_27));
 			NullCheck(L_24);
-			VirtActionInvoker1< uint8_t >::Invoke(26 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_24, L_28);
+			VirtActionInvoker1< uint8_t >::Invoke(27 /* System.Void System.IO.Stream::WriteByte(System.Byte) */, L_24, L_28);
 		}
 
 IL_006c:
@@ -8883,7 +8883,7 @@ IL_007d:
 		{
 			MemoryStream_t495F44B85E6B4DDE2BB7E17DE963256A74E2298C * L_33 = V_0;
 			NullCheck(L_33);
-			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_34 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(30 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_33);
+			ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* L_34 = VirtFuncInvoker0< ByteU5BU5D_tD06FDBE8142446525DF1C40351D523A228373821* >::Invoke(31 /* System.Byte[] System.IO.MemoryStream::ToArray() */, L_33);
 			V_5 = L_34;
 			IL2CPP_LEAVE(0x92, FINALLY_0087);
 		}

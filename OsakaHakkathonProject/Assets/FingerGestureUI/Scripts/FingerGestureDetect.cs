@@ -5,18 +5,20 @@ using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
 using UnityEngine.Events;
-
+using TMPro;
 
 public class FingerGestureDetect : MonoBehaviour
 {
+    [SerializeField] private TextMeshPro text;
     [SerializeField,Header("Target"),Tooltip("Tracked Hands")]
     Handedness handType;
     
     [SerializeField,Range(0,90),Header("Threshold")]
     private float indexThreshold = 5;
 
-    [SerializeField,Range(0,90)]
-    private float middleThreshold,ringAndPinkyFingerThreshpld, thumbThreshold;
+    [SerializeField, Range(0, 90)] private float middleThreshold, ringAndPinkyFingerThreshpld;
+    [SerializeField,Range(90,200)]
+    float thumbThreshold;
 
     [SerializeField, Range(0, 90)] 
     private float facingThreshold;
@@ -52,6 +54,8 @@ public class FingerGestureDetect : MonoBehaviour
      UnityEvent OnIndexLostFirst;
 
      [SerializeField] UnityEvent OnMiddleLostFirst,OnRingAndPinkyLostFirst;
+
+     [SerializeField, Header("HandLost")] private UnityEvent OnHandLostEvent;
     
      bool?  handdetected;
 
@@ -63,9 +67,17 @@ public class FingerGestureDetect : MonoBehaviour
         handdetected = HandJointUtils.FindHand(handType)?.TryGetJoint(TrackedHandJoint.Palm, out MixedRealityPose PalmPose);
         if ( handdetected != null && handdetected==true )
         {
-            
+            if ( ThumbDetected()&&HanddirDetected())
+            {
+                OnThumbFingerDetect.Invoke();
+            }
+            else
+            {
+                OnThumbFingerLost.Invoke();
+            }
             if (indexfingerDetected()&& HanddirDetected())
             {
+                Debug.Log("index:Open");
                 OnIndexFingerDetect.Invoke();
                 if (indexFirstfinger)
                 {
@@ -76,6 +88,7 @@ public class FingerGestureDetect : MonoBehaviour
             }
             else
             {
+                Debug.Log("index:Close");
                 OnIndexFingerLost.Invoke();
                 if (!indexFirstfinger)
                 {
@@ -88,6 +101,7 @@ public class FingerGestureDetect : MonoBehaviour
 
             if (middlefingerDetected()&& HanddirDetected())
             {
+                Debug.Log("middle:Open");
                 OnMiddleFingerDetect.Invoke();
                 if (middleFirstfinger)
                 {
@@ -98,6 +112,7 @@ public class FingerGestureDetect : MonoBehaviour
             }
             else
             {
+                Debug.Log("middle:Close");
                 OnMiddleFingerLost.Invoke();
                 if (!middleFirstfinger)
                 {
@@ -109,6 +124,7 @@ public class FingerGestureDetect : MonoBehaviour
 
             if (RingAndPinkyFingerDetected()&& HanddirDetected())
             {
+                Debug.Log("RingAndPinky:Open");
                 OnRingAndPinkyDetect.Invoke();
                 if (ringandPinkyFirstfinger)
                 {
@@ -119,6 +135,7 @@ public class FingerGestureDetect : MonoBehaviour
             }
             else
             {
+                Debug.Log("RingAndPinky:Close");
                 OnRingAndPinkyLost.Invoke();
                 if (!ringandPinkyFirstfinger)
                 {
@@ -130,12 +147,8 @@ public class FingerGestureDetect : MonoBehaviour
         }
         else
         {
-            OnIndexFingerLost.Invoke();
-            //indexFirstfinger = true;
-            OnMiddleFingerLost.Invoke();
-            //middleFirstfinger = true;
-            OnRingAndPinkyLost.Invoke();
-            //ringandPinkyFirstfinger = true;
+            OnHandLostEvent.Invoke();
+            
         }
     }
 
@@ -146,7 +159,7 @@ public class FingerGestureDetect : MonoBehaviour
         {
             if ( facingThreshold<Vector3.Angle(palmPose.Up, CameraCache.Main.transform.forward) )
             {
-                Debug.Log(palmPose.Up);
+//                Debug.Log(palmPose.Up);
                 return true;
             }
         }
@@ -166,7 +179,7 @@ public class FingerGestureDetect : MonoBehaviour
             if(jointedHand.TryGetJoint(TrackedHandJoint.IndexTip,out indexTipPose)&& jointedHand.TryGetJoint(TrackedHandJoint.IndexDistalJoint,out indexDistalPose)&&jointedHand.TryGetJoint(TrackedHandJoint.IndexMiddleJoint,out indexMiddlePose)&& jointedHand.TryGetJoint(TrackedHandJoint.IndexKnuckle,out IndexKnucklePose))
             {
                 Vector3 finger1 = IndexKnucklePose.Position - PalmPose.Position;
-                Vector3  finger2 = indexMiddlePose.Position - IndexKnucklePose.Position;
+                Vector3 finger2 = indexMiddlePose.Position - IndexKnucklePose.Position;
                 Vector3 finger3 = indexDistalPose.Position - indexMiddlePose.Position;
                 Vector3 finger4 = indexTipPose.Position - indexDistalPose.Position;
                 
@@ -207,7 +220,6 @@ public class FingerGestureDetect : MonoBehaviour
                 float f = Vector3.Angle(finger3, finger4);
 
                 float aba = (Mathf.Abs(d) + Mathf.Abs(e) + Mathf.Abs(f)) / 3;
-
                 if (aba < middleThreshold)
                 {
                     return true;
@@ -245,9 +257,8 @@ public class FingerGestureDetect : MonoBehaviour
                 float d = Vector3.Angle(finger1, finger2);
                 float e = Vector3.Angle(finger2, finger3);
                 float f = Vector3.Angle(finger3, finger4);
-
                 float aba = (Mathf.Abs(d) + Mathf.Abs(e) + Mathf.Abs(f)) / 3;
-
+                Debug.Log(aba);
                 if (aba < ringAndPinkyFingerThreshpld)
                 {
                     return true;
@@ -272,7 +283,7 @@ public class FingerGestureDetect : MonoBehaviour
                 jointedHand.TryGetJoint(TrackedHandJoint.ThumbDistalJoint, out ThumbDistalPose) &&
                 jointedHand.TryGetJoint(TrackedHandJoint.ThumbProximalJoint ,out ThumbProximalPose))
             {
-                Vector3 finger1 = ThumbProximalPose.Position - PalmPose.Position;
+          /*      Vector3 finger1 = ThumbProximalPose.Position - PalmPose.Position;
                 Vector3 finger2 = ThumbDistalPose.Position - ThumbProximalPose.Position;
                 Vector3 finger3 = ThumbTipPose.Position - ThumbProximalPose.Position;
 
@@ -282,10 +293,20 @@ public class FingerGestureDetect : MonoBehaviour
 
                 float aba = (Mathf.Abs(d) + Mathf.Abs(e)/ 2);
 
+                Debug.Log("T"+aba);
                 if (aba < thumbThreshold)
                 {
                     return true;
-                }
+                }*/
+          Vector3 finger1 = ThumbTipPose.Position - PalmPose.Position;
+          float c = Vector3.Angle(PalmPose.Position, finger1);
+            Debug.Log(finger1);
+            text.text = c.ToString();
+          if (c > thumbThreshold)
+          {
+              return true;
+          }
+              
             }
         }
 

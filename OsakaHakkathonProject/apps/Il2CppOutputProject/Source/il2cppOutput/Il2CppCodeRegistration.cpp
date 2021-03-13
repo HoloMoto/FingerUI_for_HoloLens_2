@@ -94,6 +94,10 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_I18N_MidEastCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_I18N_OtherCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_I18N_RareCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_I18N_WestCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Demos_GltfCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Demos_InspectorFieldsCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Demos_UX_InteractablesCodeGenModule;
+IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_ExamplesCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Providers_WindowsMixedRealityCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Providers_WindowsSceneUnderstandingCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Providers_WindowsVoiceInputCodeGenModule;
@@ -109,7 +113,7 @@ IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_Microsoft_MixedReality_Toolkit_Servi
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_UnityEngineCodeGenModule;
 IL2CPP_EXTERN_C_CONST Il2CppCodeGenModule g_AssemblyU2DCSharpCodeGenModule;
 extern const Il2CppCodeGenModule* g_CodeGenModules[];
-const Il2CppCodeGenModule* g_CodeGenModules[74] = 
+const Il2CppCodeGenModule* g_CodeGenModules[78] = 
 {
 	(&g_mscorlibCodeGenModule),
 	(&g_System_ConfigurationCodeGenModule),
@@ -171,6 +175,10 @@ const Il2CppCodeGenModule* g_CodeGenModules[74] =
 	(&g_I18N_OtherCodeGenModule),
 	(&g_I18N_RareCodeGenModule),
 	(&g_I18N_WestCodeGenModule),
+	(&g_Microsoft_MixedReality_Toolkit_Demos_GltfCodeGenModule),
+	(&g_Microsoft_MixedReality_Toolkit_Demos_InspectorFieldsCodeGenModule),
+	(&g_Microsoft_MixedReality_Toolkit_Demos_UX_InteractablesCodeGenModule),
+	(&g_Microsoft_MixedReality_Toolkit_ExamplesCodeGenModule),
 	(&g_Microsoft_MixedReality_Toolkit_Providers_WindowsMixedRealityCodeGenModule),
 	(&g_Microsoft_MixedReality_Toolkit_Providers_WindowsSceneUnderstandingCodeGenModule),
 	(&g_Microsoft_MixedReality_Toolkit_Providers_WindowsVoiceInputCodeGenModule),
@@ -191,19 +199,19 @@ const Il2CppCodeRegistration g_CodeRegistration =
 {
 	2,
 	g_ReversePInvokeWrapperPointers,
-	41056,
+	42147,
 	g_Il2CppGenericMethodPointers,
-	5311,
+	5414,
 	g_Il2CppInvokerPointers,
-	9765,
+	10472,
 	g_AttributeGenerators,
-	2506,
+	2543,
 	g_UnresolvedVirtualMethodPointers,
-	7897,
+	8079,
 	g_Il2CppInteropData,
 	0,
 	NULL,
-	74,
+	78,
 	g_CodeGenModules,
 };
 IL2CPP_EXTERN_C_CONST Il2CppMetadataRegistration g_MetadataRegistration;

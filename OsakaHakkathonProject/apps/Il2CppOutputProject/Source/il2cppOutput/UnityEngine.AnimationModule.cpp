@@ -2933,8 +2933,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTriggerString_m77CE57996467D
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_SetTriggerID_mD08597B567A91FC132350A343E69A084EC958040 (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___id0, const RuntimeMethod* method);
 // System.Void UnityEngine.Animator::ResetTriggerString(System.String)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTriggerString_m31B233F948D7551D220FEDA56B002E6724B89851 (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, String_t* ___name0, const RuntimeMethod* method);
-// System.Void UnityEngine.Animator::ResetTriggerID(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTriggerID_m2E7AD9D9943EC2B4CF5D571197DC84D64F4DDEEB (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___id0, const RuntimeMethod* method);
 // System.Void UnityEngine.Animator::GetAnimatorStateInfo(System.Int32,UnityEngine.StateInfoIndex,UnityEngine.AnimatorStateInfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorStateInfo_mBDC199173734AF60218E4727E74F689180BC8D8B (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___layerIndex0, int32_t ___stateInfoIndex1, AnimatorStateInfo_tF6D8ADF771CD13DC578AC9A574FD33CC99AD46E2 * ___info2, const RuntimeMethod* method);
 // System.Void UnityEngine.Animator::Play(System.String,System.Int32,System.Single)
@@ -4495,15 +4493,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTrigger_m70120C9A00EA482BF
 		return;
 	}
 }
-// System.Void UnityEngine.Animator::ResetTrigger(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTrigger_mE0784AD15610BB61C5A59663BD9E11FF73ACDABC (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___id0, const RuntimeMethod* method)
-{
-	{
-		int32_t L_0 = ___id0;
-		Animator_ResetTriggerID_m2E7AD9D9943EC2B4CF5D571197DC84D64F4DDEEB(__this, L_0, /*hidden argument*/NULL);
-		return;
-	}
-}
 // System.Void UnityEngine.Animator::GetAnimatorStateInfo(System.Int32,UnityEngine.StateInfoIndex,UnityEngine.AnimatorStateInfo&)
 IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_GetAnimatorStateInfo_mBDC199173734AF60218E4727E74F689180BC8D8B (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___layerIndex0, int32_t ___stateInfoIndex1, AnimatorStateInfo_tF6D8ADF771CD13DC578AC9A574FD33CC99AD46E2 * ___info2, const RuntimeMethod* method)
 {
@@ -4653,15 +4642,6 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTriggerString_m31B233F948D
 	if (!_il2cpp_icall_func)
 	_il2cpp_icall_func = (Animator_ResetTriggerString_m31B233F948D7551D220FEDA56B002E6724B89851_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::ResetTriggerString(System.String)");
 	_il2cpp_icall_func(__this, ___name0);
-}
-// System.Void UnityEngine.Animator::ResetTriggerID(System.Int32)
-IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void Animator_ResetTriggerID_m2E7AD9D9943EC2B4CF5D571197DC84D64F4DDEEB (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A * __this, int32_t ___id0, const RuntimeMethod* method)
-{
-	typedef void (*Animator_ResetTriggerID_m2E7AD9D9943EC2B4CF5D571197DC84D64F4DDEEB_ftn) (Animator_tF1A88E66B3B731DDA75A066DBAE9C55837660F5A *, int32_t);
-	static Animator_ResetTriggerID_m2E7AD9D9943EC2B4CF5D571197DC84D64F4DDEEB_ftn _il2cpp_icall_func;
-	if (!_il2cpp_icall_func)
-	_il2cpp_icall_func = (Animator_ResetTriggerID_m2E7AD9D9943EC2B4CF5D571197DC84D64F4DDEEB_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.Animator::ResetTriggerID(System.Int32)");
-	_il2cpp_icall_func(__this, ___id0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

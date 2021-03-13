@@ -293,6 +293,8 @@ struct Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12;
 struct ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1;
 // System.ArgumentNullException
 struct ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD;
+// System.ArgumentOutOfRangeException
+struct ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA;
 // System.AsyncCallback
 struct AsyncCallback_t3F3DA3BEDAEE81DD1D24125DF8EB30E85EE14DA4;
 // System.Byte[]
@@ -417,6 +419,7 @@ IL2CPP_EXTERN_C RuntimeClass* Action_1_tEAD62A4E2B757ADC9D11D8A3CCB8E2CF8792F64C
 IL2CPP_EXTERN_C RuntimeClass* Action_1_tF26E81D6C525086A6BF0264D4CCFF4F9D3C86D12_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* ArgumentNullException_t581DF992B1F3E0EC6EFB30CC5DC43519A79B27AD_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Boolean_tB53F6830F670160873277339AA58F15CAED4399C_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* Bounds_tA2716F5212749C61B0E7B7B77E0CD3D79B742890_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTime_t349B7449FBAAFF4192636E2B7A07694DA9236132_il2cpp_TypeInfo_var;
@@ -467,10 +470,12 @@ IL2CPP_EXTERN_C String_t* _stringLiteral589875DC4FFF7DFB0B1533B09C9B338A9ED0909A
 IL2CPP_EXTERN_C String_t* _stringLiteral7A28117916490821638320A59586D6D23372F1C5;
 IL2CPP_EXTERN_C String_t* _stringLiteral87EA5DFC8B8E384D848979496E706390B497E547;
 IL2CPP_EXTERN_C String_t* _stringLiteral88E6995E626DB3204B27CE44EE5E11B194653566;
+IL2CPP_EXTERN_C String_t* _stringLiteral8EFA39C5EF55A7E786FC9356D5C1ECC9E218C962;
 IL2CPP_EXTERN_C String_t* _stringLiteralB782D9835143821E697B67407CCFB082FE6322A9;
 IL2CPP_EXTERN_C String_t* _stringLiteralE56BDFDA02CDB1AF069D764166DBFD5EF4DC1A56;
 IL2CPP_EXTERN_C String_t* _stringLiteralED0A81780A3ACBDFBB61618D731769D527A0C1DE;
 IL2CPP_EXTERN_C String_t* _stringLiteralF06DF609AED50661247CC6EC96C1599C193C3EC4;
+IL2CPP_EXTERN_C String_t* _stringLiteralF32B67C7E26342AF42EFABC674D441DCA0A281C5;
 IL2CPP_EXTERN_C String_t* _stringLiteralFAE3F30C59F14099E2D347848D5A1F32E789BBC0;
 IL2CPP_EXTERN_C String_t* _stringLiteralFF63FAC4076C9D27B0D6EA9F35D626E26F89DE05;
 IL2CPP_EXTERN_C const RuntimeMethod* Action_1_Invoke_m0A7693DAB618A5AD064357DEE18C65EE17EC4F3C_RuntimeMethod_var;
@@ -505,6 +510,7 @@ IL2CPP_EXTERN_C const RuntimeMethod* SurfaceObserver_RequestMeshAsync_mF7815161E
 IL2CPP_EXTERN_C const RuntimeMethod* WorldAnchorStore_Delete_mB519C56F58E9312FBBD868A2D6D8560FCADC1063_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WorldAnchorStore_Load_m229510D067D4607C59BF752A21211B82609ADE7E_RuntimeMethod_var;
 IL2CPP_EXTERN_C const RuntimeMethod* WorldAnchorStore_Save_m1A82C4156B8870A40AC80E0D9027638C2307729B_RuntimeMethod_var;
+IL2CPP_EXTERN_C const RuntimeMethod* XRSettings_set_renderViewportScale_mA529C7437A54660C6773267061D571EFB4F4B35D_RuntimeMethod_var;
 IL2CPP_EXTERN_C const uint32_t Boundary_TryGetGeometry_mE516ABC521F94493B6D911938A953FBF44CC8B0F_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t DeserializationCompleteDelegate_BeginInvoke_m9910723A46FB34B3B07F0DC4A36338761DBC789C_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t GestureErrorDelegate_BeginInvoke_m74CC1A18B8CACCA1FA512F2173BD31AC7AAAB441_MetadataUsageId;
@@ -604,6 +610,7 @@ IL2CPP_EXTERN_C const uint32_t WorldAnchor_remove_OnTrackingChanged_m3F6B4A3000D
 IL2CPP_EXTERN_C const uint32_t WorldManager_Internal_TriggerPositionalLocatorStateChanged_mE66D0FFF1E4FD4406161D7EC482B45C33B0E0FC9_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t XRDevice_InvokeDeviceLoaded_mD5D5577A4E03D0474FAFBB2596B698B6A8B5FD11_MetadataUsageId;
 IL2CPP_EXTERN_C const uint32_t XRDevice__cctor_m4FE111291FBDF43A481045CBABECF9AEC70B5EC9_MetadataUsageId;
+IL2CPP_EXTERN_C const uint32_t XRSettings_set_renderViewportScale_mA529C7437A54660C6773267061D571EFB4F4B35D_MetadataUsageId;
 struct Delegate_t_marshaled_com;
 struct Delegate_t_marshaled_pinvoke;
 struct Exception_t_marshaled_com;
@@ -993,6 +1000,15 @@ public:
 		___deviceLoaded_0 = value;
 		Il2CppCodeGenWriteBarrier((void**)(&___deviceLoaded_0), (void*)value);
 	}
+};
+
+
+// UnityEngine.XR.XRSettings
+struct  XRSettings_tB57FCBA5B804996700C097CC13B658E7BD43D874  : public RuntimeObject
+{
+public:
+
+public:
 };
 
 
@@ -4350,6 +4366,42 @@ public:
 };
 
 
+// System.ArgumentOutOfRangeException
+struct  ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA  : public ArgumentException_tEDCD16F20A09ECE461C3DA766C16EDA8864057D1
+{
+public:
+	// System.Object System.ArgumentOutOfRangeException::m_actualValue
+	RuntimeObject * ___m_actualValue_19;
+
+public:
+	inline static int32_t get_offset_of_m_actualValue_19() { return static_cast<int32_t>(offsetof(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA, ___m_actualValue_19)); }
+	inline RuntimeObject * get_m_actualValue_19() const { return ___m_actualValue_19; }
+	inline RuntimeObject ** get_address_of_m_actualValue_19() { return &___m_actualValue_19; }
+	inline void set_m_actualValue_19(RuntimeObject * value)
+	{
+		___m_actualValue_19 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&___m_actualValue_19), (void*)value);
+	}
+};
+
+struct ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_StaticFields
+{
+public:
+	// System.String modreq(System.Runtime.CompilerServices.IsVolatile) System.ArgumentOutOfRangeException::_rangeMessage
+	String_t* ____rangeMessage_18;
+
+public:
+	inline static int32_t get_offset_of__rangeMessage_18() { return static_cast<int32_t>(offsetof(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_StaticFields, ____rangeMessage_18)); }
+	inline String_t* get__rangeMessage_18() const { return ____rangeMessage_18; }
+	inline String_t** get_address_of__rangeMessage_18() { return &____rangeMessage_18; }
+	inline void set__rangeMessage_18(String_t* value)
+	{
+		____rangeMessage_18 = value;
+		Il2CppCodeGenWriteBarrier((void**)(&____rangeMessage_18), (void*)value);
+	}
+};
+
+
 // UnityEngine.MeshCollider
 struct  MeshCollider_t60EB55ADE92499FE8D1AA206D2BD96E65B2766DE  : public Collider_t0FEEB36760860AD21B3B1F0509C365B393EC4BDF
 {
@@ -5181,6 +5233,10 @@ inline void Action_1_Invoke_m6328F763431ED2ACDDB6ED8F0FDEA6194403E79F (Action_1_
 {
 	((  void (*) (Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 *, String_t*, const RuntimeMethod*))Action_1_Invoke_mB86FC1B303E77C41ED0E94FC3592A9CF8DA571D5_gshared)(__this, ___obj0, method);
 }
+// System.Void System.ArgumentOutOfRangeException::.ctor(System.String,System.String)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void ArgumentOutOfRangeException__ctor_m300CE4D04A068C209FD858101AC361C1B600B5AE (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * __this, String_t* ___paramName0, String_t* ___message1, const RuntimeMethod* method);
+// System.Void UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF (float ___value0, const RuntimeMethod* method);
 #ifdef __clang__
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Winvalid-offsetof"
@@ -15120,6 +15176,74 @@ IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRDevice__cctor_m4FE111291FBDF43A481045C
 		((XRDevice_t392FCA3D1DCEB95FF500C8F374C88B034C31DF4A_StaticFields*)il2cpp_codegen_static_fields_for(XRDevice_t392FCA3D1DCEB95FF500C8F374C88B034C31DF4A_il2cpp_TypeInfo_var))->set_deviceLoaded_0((Action_1_t32A9EECF5D4397CC1B9A7C7079870875411B06D0 *)NULL);
 		return;
 	}
+}
+#ifdef __clang__
+#pragma clang diagnostic pop
+#endif
+#ifdef __clang__
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Winvalid-offsetof"
+#pragma clang diagnostic ignored "-Wunused-variable"
+#endif
+// System.Void UnityEngine.XR.XRSettings::set_renderViewportScale(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScale_mA529C7437A54660C6773267061D571EFB4F4B35D (float ___value0, const RuntimeMethod* method)
+{
+	static bool s_Il2CppMethodInitialized;
+	if (!s_Il2CppMethodInitialized)
+	{
+		il2cpp_codegen_initialize_method (XRSettings_set_renderViewportScale_mA529C7437A54660C6773267061D571EFB4F4B35D_MetadataUsageId);
+		s_Il2CppMethodInitialized = true;
+	}
+	bool V_0 = false;
+	int32_t G_B3_0 = 0;
+	{
+		float L_0 = ___value0;
+		if ((((float)L_0) < ((float)(0.0f))))
+		{
+			goto IL_0013;
+		}
+	}
+	{
+		float L_1 = ___value0;
+		G_B3_0 = ((((float)L_1) > ((float)(1.0f)))? 1 : 0);
+		goto IL_0014;
+	}
+
+IL_0013:
+	{
+		G_B3_0 = 1;
+	}
+
+IL_0014:
+	{
+		V_0 = (bool)G_B3_0;
+		bool L_2 = V_0;
+		if (!L_2)
+		{
+			goto IL_0028;
+		}
+	}
+	{
+		ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA * L_3 = (ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA *)il2cpp_codegen_object_new(ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var);
+		ArgumentOutOfRangeException__ctor_m300CE4D04A068C209FD858101AC361C1B600B5AE(L_3, _stringLiteralF32B67C7E26342AF42EFABC674D441DCA0A281C5, _stringLiteral8EFA39C5EF55A7E786FC9356D5C1ECC9E218C962, /*hidden argument*/NULL);
+		IL2CPP_RAISE_MANAGED_EXCEPTION(L_3, XRSettings_set_renderViewportScale_mA529C7437A54660C6773267061D571EFB4F4B35D_RuntimeMethod_var);
+	}
+
+IL_0028:
+	{
+		float L_4 = ___value0;
+		XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF(L_4, /*hidden argument*/NULL);
+		return;
+	}
+}
+// System.Void UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)
+IL2CPP_EXTERN_C IL2CPP_METHOD_ATTR void XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF (float ___value0, const RuntimeMethod* method)
+{
+	typedef void (*XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF_ftn) (float);
+	static XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF_ftn _il2cpp_icall_func;
+	if (!_il2cpp_icall_func)
+	_il2cpp_icall_func = (XRSettings_set_renderViewportScaleInternal_m30C4242281864551E8A995B7CF5AFFD8650729EF_ftn)il2cpp_codegen_resolve_icall ("UnityEngine.XR.XRSettings::set_renderViewportScaleInternal(System.Single)");
+	_il2cpp_icall_func(___value0);
 }
 #ifdef __clang__
 #pragma clang diagnostic pop

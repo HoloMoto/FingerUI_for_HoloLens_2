@@ -240,7 +240,7 @@ struct Void_t22962CB4C05B1D89B55A6E1139F0E87A90987017;
 
 IL2CPP_EXTERN_C RuntimeClass* ArgumentOutOfRangeException_t94D19DF918A54511AEDF4784C9A08741BAD1DEDA_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AsyncStatusU5BU5D_tF8E4B2AD53A393E5256AA8BA94B015A19F9348DA_il2cpp_TypeInfo_var;
-IL2CPP_EXTERN_C RuntimeClass* AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC_il2cpp_TypeInfo_var;
+IL2CPP_EXTERN_C RuntimeClass* AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AttributeTargetsU5BU5D_t43ADA39F08258A2862F2E29635B7D34629E256D9_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* AttributeTargets_tA7256AD263010BF992D3949CE57A314716980FA7_il2cpp_TypeInfo_var;
 IL2CPP_EXTERN_C RuntimeClass* DateTimeU5BU5D_tF99CEBC490438246063FF10220535B915FD29D57_il2cpp_TypeInfo_var;
@@ -3211,14 +3211,14 @@ public:
 
 
 // Windows.Foundation.AsyncStatus
-struct  AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC 
+struct  AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E 
 {
 public:
 	// System.Int32 Windows.Foundation.AsyncStatus::value__
 	int32_t ___value___2;
 
 public:
-	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC, ___value___2)); }
+	inline static int32_t get_offset_of_value___2() { return static_cast<int32_t>(offsetof(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E, ___value___2)); }
 	inline int32_t get_value___2() const { return ___value___2; }
 	inline int32_t* get_address_of_value___2() { return &___value___2; }
 	inline void set_value___2(int32_t value)
@@ -17829,7 +17829,7 @@ il2cpp_hresult_t IVector_1_IndexOf_m0B42DFA957BFF985DB37F4EFD2C545DFAC82B9BC_Com
 		for (int i = 0; i < elementsInCollection; i++)
 		{
 			int32_t item = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IList`1<Windows.Foundation.AsyncStatus>::get_Item(System.Int32) */, IList_1_t11FAA6B9F830ECC6337186B07013DF74C2C3C522_il2cpp_TypeInfo_var, __this, i);
-			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, Box(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC_il2cpp_TypeInfo_var, &item), Box(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC_il2cpp_TypeInfo_var, &___value0)))
+			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, Box(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_il2cpp_TypeInfo_var, &item), Box(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_il2cpp_TypeInfo_var, &___value0)))
 			{
 				____index1_empty = static_cast<uint32_t>(i);
 				returnValue = true;
@@ -18590,7 +18590,7 @@ il2cpp_hresult_t IVectorView_1_IndexOf_mBF1B055C799C71B105FA01CDB3455A4FE2E502A7
 		for (int i = 0; i < elementsInCollection; i++)
 		{
 			int32_t item = InterfaceFuncInvoker1< int32_t, int32_t >::Invoke(0 /* T System.Collections.Generic.IReadOnlyList`1<Windows.Foundation.AsyncStatus>::get_Item(System.Int32) */, IReadOnlyList_1_tED9F7ABC10EEC069AE1FE7640C8704097BA8C126_il2cpp_TypeInfo_var, __this, i);
-			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, Box(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC_il2cpp_TypeInfo_var, &item), Box(AsyncStatus_t53CF3803A027F92D24D41E6A852571005D186EEC_il2cpp_TypeInfo_var, &___value0)))
+			if (VirtFuncInvoker1< bool, RuntimeObject * >::Invoke(0 /* System.Boolean System.Object::Equals(System.Object) */, Box(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_il2cpp_TypeInfo_var, &item), Box(AsyncStatus_tBDA7F4CE333BAE130A8BB6DF88FBC68E6A54340E_il2cpp_TypeInfo_var, &___value0)))
 			{
 				____index1_empty = static_cast<uint32_t>(i);
 				returnValue = true;

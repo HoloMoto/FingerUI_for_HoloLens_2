@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using Microsoft.MixedReality.Toolkit.Utilities;
@@ -16,18 +17,30 @@ public class DeviceStatusChecker : MonoBehaviour
         
     [SerializeField]
     private GameObject[] batteryLevelObjects;
+    [SerializeField]
+    TextMeshPro _dayText;
+    [SerializeField]
+    TextMeshPro _timeText;
+
     
     void Start()
     {
       BatteryStatusCheck();   
       
     }
+
+    private void Update()
+    {
+        _dayText.text = (DateTime.Now.Month.ToString() +"/"+DateTime.Now.Day.ToString());
+        _timeText.text = (DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+DateTime.Now.Second.ToString());
+    }
+
     public void BatteryStatusCheck()
     {
         float batt = SystemInfo.batteryLevel * 100f;
         //debugText
       //  batteryText.text = batt.ToString();
-      Debug.Log(batt);
+      //Debug.Log(batt);
         if (batt>90)
         {
             battery = 5;
