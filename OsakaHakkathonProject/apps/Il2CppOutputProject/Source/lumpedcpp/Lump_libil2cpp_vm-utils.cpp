@@ -1,6 +1,0 @@
-#include "il2cpp-config.h"
-#include "D:\PlayGround\FingerUI_for_HoloLens_2\OsakaHakkathonProject\apps\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\BlobReader.cpp"
-#include "D:\PlayGround\FingerUI_for_HoloLens_2\OsakaHakkathonProject\apps\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\Debugger.cpp"
-#include "D:\PlayGround\FingerUI_for_HoloLens_2\OsakaHakkathonProject\apps\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\NativeDelegateMethodCache.cpp"
-#include "D:\PlayGround\FingerUI_for_HoloLens_2\OsakaHakkathonProject\apps\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\NativeSymbol.cpp"
-#include "D:\PlayGround\FingerUI_for_HoloLens_2\OsakaHakkathonProject\apps\Il2CppOutputProject\IL2CPP\libil2cpp\vm-utils\VmStringUtils.cpp"

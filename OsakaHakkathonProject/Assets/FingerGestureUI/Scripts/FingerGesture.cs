@@ -17,12 +17,12 @@ public class FingerGesture : MonoBehaviour
     [SerializeField,Header("Event")] 
     UnityEvent firstInventory;
     [SerializeField] 
-    UnityEvent SecondInventory, ThirdInventory,LostInventry;
+    UnityEvent LostInventry;
 
     [SerializeField] private UnityEvent ThumbOn,IndexOn, MiddleOn, RingOn,ThumbOff, IndexOff, MiddleOff, RingOff,HandLost;
 
-    [SerializeField]
-    private bool eventstatus1, eventstatus2, eventstatus3 = false;
+    
+    public bool eventstatus1, eventstatus2, eventstatus3 = false;
     
     [SerializeField]
     private bool setFirst,setSecond,setThird = true;
@@ -79,7 +79,7 @@ public class FingerGesture : MonoBehaviour
 
     private void Update()
     {
-        if (!indexActive&&!middleActive&&!ringAndPinkyActive)
+        if (!indexActive&&!middleActive&&!ringAndPinkyActive&&!thumbActive)
         {
             Debug.Log("AllFingerClosed");
             //   LostInventry.Invoke();
@@ -90,11 +90,24 @@ public class FingerGesture : MonoBehaviour
                 
                 MiddleOff.Invoke();
 
+                fingerEvent("eventend");
             eventstatus1 = false;
             eventstatus2 = false;
             eventstatus3 = false;
         }
-        if (indexActive&&!middleActive&&!ringAndPinkyActive)
+        if (!indexActive&&!middleActive&&!ringAndPinkyActive&&thumbActive)
+        {
+            IndexOff.Invoke();
+                
+            MiddleOff.Invoke();
+                
+            MiddleOff.Invoke();
+            LostInventry.Invoke();
+            eventstatus1 = false;
+            eventstatus2 = false;
+            eventstatus3 = false;
+        }
+        if (indexActive&&!middleActive&&!ringAndPinkyActive&&thumbActive)
         {
             if (setFirst)
             {
@@ -119,7 +132,8 @@ public class FingerGesture : MonoBehaviour
             
         }
 
-        if (indexActive && middleActive && !ringAndPinkyActive)
+        
+        if (indexActive && middleActive && !ringAndPinkyActive&& thumbActive)
         {
             if (setSecond)
             {
@@ -144,7 +158,7 @@ public class FingerGesture : MonoBehaviour
         }
         
         
-        if (indexActive&&middleActive&&ringAndPinkyActive)
+        if (indexActive&&middleActive&&ringAndPinkyActive && thumbActive)
         {
             if (setThird)
             {
@@ -238,10 +252,7 @@ public class FingerGesture : MonoBehaviour
                 break;
             case "event3":
                 RingOff.Invoke();
-
                 break;
-                
-            
         }
     }
     

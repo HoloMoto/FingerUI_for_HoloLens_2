@@ -5,7 +5,7 @@ using JetBrains.Annotations;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.UIElements;
 
 
 [RequireComponent(typeof(GridObjectCollection))]
@@ -22,17 +22,27 @@ public class DeviceStatusChecker : MonoBehaviour
     [SerializeField]
     TextMeshPro _timeText;
 
+    [SerializeField] private watchType type;
+    public enum watchType
+    {
+        time,
+        battery,
+        other
+    }
     
     void Start()
     {
-      BatteryStatusCheck();   
-      
+      BatteryStatusCheck();
     }
 
     private void Update()
     {
-        _dayText.text = (DateTime.Now.Month.ToString() +"/"+DateTime.Now.Day.ToString());
-        _timeText.text = (DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+DateTime.Now.Second.ToString());
+        if (type == watchType.time)
+        {
+            _dayText.text = (DateTime.Now.Month.ToString() +"/"+DateTime.Now.Day.ToString());
+            _timeText.text = (DateTime.Now.Hour.ToString() + ":" + DateTime.Now.Minute.ToString()+":"+DateTime.Now.Second.ToString());    
+        }
+        
     }
 
     public void BatteryStatusCheck()
@@ -67,6 +77,15 @@ public class DeviceStatusChecker : MonoBehaviour
             batteryLevelObjects[0].SetActive(true);batteryLevelObjects[1].SetActive(false); batteryLevelObjects[2].SetActive(false); batteryLevelObjects[3].SetActive(false); batteryLevelObjects[4].SetActive(false);
           //  Material mat = batteryLevelObjects[0].GetComponent<Material>();
            // mat.color = Color.red;
+           BatteryEmpty();
         }
+    }
+
+    private void BatteryEmpty()
+    {
+        Debug.Log("BatteryEmpty");
+        type = watchType.battery;
+        _timeText.text = "Low battery";
+        _dayText.text = "worming";
     }
 }

@@ -17,7 +17,7 @@ public class FingerGestureDetect : MonoBehaviour
     private float indexThreshold = 5;
 
     [SerializeField, Range(0, 90)] private float middleThreshold, ringAndPinkyFingerThreshpld;
-    [SerializeField,Range(90,200)]
+    [SerializeField,Range(0,90)]
     float thumbThreshold;
 
     [SerializeField, Range(0, 90)] 
@@ -283,30 +283,20 @@ public class FingerGestureDetect : MonoBehaviour
                 jointedHand.TryGetJoint(TrackedHandJoint.ThumbDistalJoint, out ThumbDistalPose) &&
                 jointedHand.TryGetJoint(TrackedHandJoint.ThumbProximalJoint ,out ThumbProximalPose))
             {
-          /*      Vector3 finger1 = ThumbProximalPose.Position - PalmPose.Position;
+          Vector3 finger1 = ThumbProximalPose.Position - PalmPose.Position;
                 Vector3 finger2 = ThumbDistalPose.Position - ThumbProximalPose.Position;
                 Vector3 finger3 = ThumbTipPose.Position - ThumbProximalPose.Position;
 
                 float c = Vector3.Angle(PalmPose.Position, finger1);
                 float d = Vector3.Angle(finger1, finger2);
                 float e = Vector3.Angle(finger2, finger3);
-
                 float aba = (Mathf.Abs(d) + Mathf.Abs(e)/ 2);
 
-                Debug.Log("T"+aba);
-                if (aba < thumbThreshold)
-                {
-                    return true;
-                }*/
-          Vector3 finger1 = ThumbTipPose.Position - PalmPose.Position;
-          float c = Vector3.Angle(PalmPose.Position, finger1);
-            Debug.Log(finger1);
-            text.text = c.ToString();
-          if (c > thumbThreshold)
+                text.text = aba.ToString();
+          if (aba < thumbThreshold)
           {
               return true;
-          }
-              
+          } 
             }
         }
 
